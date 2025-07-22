@@ -1,0 +1,35 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.site-header .logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.site-sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+.site-sidebar ul { list-style: none; padding: 0; }
+.site-sidebar li + li { margin-top: 0.5rem; }
+.site-sidebar a { color: #364234; text-decoration: none; }
+
+.main-container {
+  margin-left: 220px;
+  padding: 1rem;
+}

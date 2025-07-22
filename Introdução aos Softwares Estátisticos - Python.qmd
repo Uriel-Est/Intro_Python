@@ -5,3 +5,21 @@ title: "Introdução aos Softwares Estátisticos - Python"
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+# Git e GitHub
+## O que são
+## Para que servem
+## Comandos básicos
+
+# pip
+## O que é
+## Como instalar pacotes
+## Bibliotecas populares
+
+# Conceitos de Python
+## Tipos de dados
+## Variáveis e operadores
+## Listas, tuplas, dicionários
+## Estruturas de controle
+## Funções
+## Importação de bibliotecas
+## Boas práticas

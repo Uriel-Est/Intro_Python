@@ -1,5 +1,17 @@
 project:
-  title: "Introdução aos Softwares Estátisticos - Python"
+  type: website
+
+format: 
+  html: 
+    theme: default
+    tufte: true
+    css: styles.css
+    include-before-body: _header.html
+    include-after-body: _sidebar.html
+
+website: 
+  title: "Introdução aos Softwares Estatísticos"
+  
 
 
 
