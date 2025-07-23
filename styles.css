@@ -1,29 +1,32 @@
 :root {
-  /* Medidas exatas do seu grid */
-  --header-height:    226.507px;
-  --sidebar-x:        263.1268px;
-  --sidebar-width:    456.338px;
-  --content-x:        calc(var(--sidebar-x) + var(--sidebar-width));
-  --content-width:    1054.9296px;
+  /* Tamanhos e margens ajustados */
+  --header-height: 16.666vh;      /* aprox. 1/6 da tela */
+  --sidebar-left: 20px;
+  --sidebar-width: 280px;         /* menor para parecer mais leve */
+  --sidebar-gap: 20px;
+  --right-gap: 200px;
 }
 
 /* ===== HEADER ===== */
 .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: static;               /* deixa de ser fixo */
   height: var(--header-height);
   background: #A3D5E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 .site-header .header-container {
   max-width: 1920px;
   margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding: 0 1rem;
 }
 .site-header .logo {
   max-height: 60%;
@@ -37,18 +40,21 @@
   margin: 0;
 }
 
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR (ÍNDICE) ===== */
 .site-sidebar {
-  position: fixed;
+  position: sticky;
   top: var(--header-height);
-  left: var(--sidebar-x);
+  left: var(--sidebar-left);
   width: var(--sidebar-width);
   height: calc(100vh - var(--header-height));
-  background: #F8F9FA;
-  border-right: 1px solid #ddd;
+  background: rgba(248,249,250,0.95);        /* leve transparência */
   padding: 1rem;
   overflow-y: auto;
   z-index: 900;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);   /* sombra suave */
+  border-radius: 0 8px 8px 0;
 }
 .sidebar-title {
   font-family: Inter, sans-serif;
@@ -79,12 +85,12 @@
 
 /* ===== CONTEÚDO ===== */
 .main-container {
-  position: fixed;
-  top: var(--header-height);
-  left: var(--content-x);
-  width: var(--content-width);
-  height: calc(100vh - var(--header-height));
+  position: relative;
+  margin-top: var(--header-height);
+  margin-left: calc(var(--sidebar-left) + var(--sidebar-width) + var(--sidebar-gap));
+  margin-right: var(--right-gap);
   padding: 1rem;
-  overflow-y: auto;
   background: white;
+  border-right: 4px solid #ddd;
+  overflow-y: visible;     /* rola a página inteira */
 }

@@ -1,29 +1,29 @@
 :root {
-  /* Medidas exatas do seu grid */
-  --header-height:    226.507px;
-  --sidebar-x:        263.1268px;
-  --sidebar-width:    456.338px;
-  --content-x:        calc(var(--sidebar-x) + var(--sidebar-width));
-  --content-width:    1054.9296px;
+  --header-height: 16.666vh;
+  --sidebar-width: 260px;
+  --sidebar-gap: 20px;
+  --right-gap: 20px;
 }
 
 /* ===== HEADER ===== */
 .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: static;
   height: var(--header-height);
   background: #A3D5E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 .site-header .header-container {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
-  padding: 0 1rem;
 }
 .site-header .logo {
   max-height: 60%;
@@ -39,16 +39,19 @@
 
 /* ===== SIDEBAR ===== */
 .site-sidebar {
-  position: fixed;
+  position: sticky;
   top: var(--header-height);
-  left: var(--sidebar-x);
   width: var(--sidebar-width);
-  height: calc(100vh - var(--header-height));
-  background: #F8F9FA;
-  border-right: 1px solid #ddd;
+  background: rgba(248,249,250,0.95);
   padding: 1rem;
+  height: calc(100vh - var(--header-height));
   overflow-y: auto;
   z-index: 900;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 0 8px 8px 0;
+  float: left;
 }
 .sidebar-title {
   font-family: Inter, sans-serif;
@@ -77,14 +80,13 @@
   text-decoration: underline;
 }
 
-/* ===== CONTEÚDO ===== */
+/* ===== CONTEÚDO PRINCIPAL ===== */
 .main-container {
-  position: fixed;
-  top: var(--header-height);
-  left: var(--content-x);
-  width: var(--content-width);
-  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  margin-left: calc(var(--sidebar-width) + var(--sidebar-gap));
+  margin-right: var(--right-gap);
   padding: 1rem;
-  overflow-y: auto;
   background: white;
+  min-width: 0;                /* evita quebra de layout */
+  overflow: visible;
 }
