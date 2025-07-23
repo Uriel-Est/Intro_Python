@@ -1,6 +1,15 @@
 ---
 title: "Introdução aos Softwares Estátisticos - Python"
+output-file: introducao-software-estatistico.html
+format: 
+    html:
+        tufte: true
+        include-before-body:
+            - _header.html
+            - _sidebar.html
 ---
+
+::: {.main-container}
 
 ## Quarto
 
@@ -23,3 +32,6 @@ Quarto enables you to weave together content and executable code into a finished
 ## Funções
 ## Importação de bibliotecas
 ## Boas práticas
+
+:::
+

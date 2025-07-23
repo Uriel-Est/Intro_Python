@@ -1,84 +1,77 @@
 [
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html",
-    "href": "Introdução aos Softwares Estátisticos - Python.html",
+    "objectID": "introducao-software-estatistico.html#quarto",
+    "href": "introducao-software-estatistico.html#quarto",
     "title": "Introdução aos Softwares Estátisticos - Python",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org. # Git e GitHub ## O que são ## Para que servem ## Comandos básicos"
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org. # Git e GitHub ## O que são ## Para que servem ## Comandos básicos"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#quarto",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#quarto",
-    "title": "Introdução aos Softwares Estátisticos - Python",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org. # Git e GitHub ## O que são ## Para que servem ## Comandos básicos"
-  },
-  {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#o-que-é",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#o-que-é",
+    "objectID": "introducao-software-estatistico.html#o-que-é",
+    "href": "introducao-software-estatistico.html#o-que-é",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "O que é",
     "text": "O que é"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#como-instalar-pacotes",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#como-instalar-pacotes",
+    "objectID": "introducao-software-estatistico.html#como-instalar-pacotes",
+    "href": "introducao-software-estatistico.html#como-instalar-pacotes",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Como instalar pacotes",
     "text": "Como instalar pacotes"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#bibliotecas-populares",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#bibliotecas-populares",
+    "objectID": "introducao-software-estatistico.html#bibliotecas-populares",
+    "href": "introducao-software-estatistico.html#bibliotecas-populares",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Bibliotecas populares",
     "text": "Bibliotecas populares"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#tipos-de-dados",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#tipos-de-dados",
+    "objectID": "introducao-software-estatistico.html#tipos-de-dados",
+    "href": "introducao-software-estatistico.html#tipos-de-dados",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Tipos de dados",
     "text": "Tipos de dados"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#variáveis-e-operadores",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#variáveis-e-operadores",
+    "objectID": "introducao-software-estatistico.html#variáveis-e-operadores",
+    "href": "introducao-software-estatistico.html#variáveis-e-operadores",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Variáveis e operadores",
     "text": "Variáveis e operadores"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#listas-tuplas-dicionários",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#listas-tuplas-dicionários",
+    "objectID": "introducao-software-estatistico.html#listas-tuplas-dicionários",
+    "href": "introducao-software-estatistico.html#listas-tuplas-dicionários",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Listas, tuplas, dicionários",
     "text": "Listas, tuplas, dicionários"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#estruturas-de-controle",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#estruturas-de-controle",
+    "objectID": "introducao-software-estatistico.html#estruturas-de-controle",
+    "href": "introducao-software-estatistico.html#estruturas-de-controle",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Estruturas de controle",
     "text": "Estruturas de controle"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#funções",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#funções",
+    "objectID": "introducao-software-estatistico.html#funções",
+    "href": "introducao-software-estatistico.html#funções",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Funções",
     "text": "Funções"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#importação-de-bibliotecas",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#importação-de-bibliotecas",
+    "objectID": "introducao-software-estatistico.html#importação-de-bibliotecas",
+    "href": "introducao-software-estatistico.html#importação-de-bibliotecas",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Importação de bibliotecas",
     "text": "Importação de bibliotecas"
   },
   {
-    "objectID": "Introdução aos Softwares Estátisticos - Python.html#boas-práticas",
-    "href": "Introdução aos Softwares Estátisticos - Python.html#boas-práticas",
+    "objectID": "introducao-software-estatistico.html#boas-práticas",
+    "href": "introducao-software-estatistico.html#boas-práticas",
     "title": "Introdução aos Softwares Estátisticos - Python",
     "section": "Boas práticas",
     "text": "Boas práticas"
