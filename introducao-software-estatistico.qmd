@@ -3,35 +3,84 @@ title: ""
 output-file: introducao-software-estatistico.html
 ---
 
-::: {.main-container}
+::: {.quarto-body}
 
 ## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document.  
-…
+Quarto te permite tomar suco de laranja e depois de maracujá...
 
 ## Git e GitHub
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ### O que são
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
 
 ### Para que servem
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
 
 ### Comandos básicos
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
 
 ## pip
+Fusce augue erat, molestie eu sem nec, suscipit fringilla libero. Donec a commodo nunc. Integer maximus tellus et dui laoreet, vel sollicitudin lorem ornare. Nam rhoncus lorem id nibh rutrum, sit amet mattis augue volutpat. Sed augue quam, lacinia et nisl et, gravida lobortis dui. Vivamus quis nisi vel nibh porta ornare vel a arcu. Ut aliquet sit amet metus id pharetra. Nam eget velit ac velit blandit accumsan.
+
 
 ### O que é
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue augue nunc, ac auctor tortor maximus a. Nulla sodales sodales turpis in condimentum. Duis quis velit pharetra, varius mauris vel, accumsan lorem. Integer aliquet nibh a justo consequat, in commodo magna vestibulum. Nullam imperdiet sapien a suscipit aliquam. Morbi quis tellus vitae nibh tempus rutrum. Proin a nisl aliquam, aliquet enim nec, molestie erat. Nunc condimentum id sem vel laoreet. Maecenas diam libero, euismod tempus congue a, elementum ut mi. Curabitur dapibus libero eget ipsum consectetur tempus. Nulla consectetur consequat velit.
+
 
 ### Como instalar pacotes
+Donec quis dui felis. Pellentesque lacinia nibh eu tristique consequat. Sed dictum volutpat massa, elementum eleifend nisi rutrum vitae. Donec at facilisis ligula. Ut vehicula, massa ultrices iaculis ullamcorper, purus magna sodales neque, et elementum felis orci at nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla porttitor ipsum ut lorem consequat egestas. Morbi eu condimentum tellus, eu elementum nulla. Pellentesque malesuada ut quam in dignissim.
+
 
 ### Bibliotecas populares
+Donec nisi orci, rutrum et vulputate et, fermentum sed nisi. Nullam sit amet velit lacus. Quisque rhoncus laoreet nibh, eget commodo urna tristique ut. Praesent eget finibus dolor, at luctus nibh. Suspendisse eu magna lacus. Cras facilisis nisi ut tortor consectetur, sit amet placerat orci auctor. Suspendisse cursus augue mi, at suscipit lorem suscipit eu.
+
 
 ## Conceitos de Python
+Nam facilisis feugiat arcu ut ultricies. Aliquam justo justo, pharetra sed facilisis et, viverra sed massa. Pellentesque congue tortor a blandit viverra. Donec aliquet libero sed est porta tempor. Aliquam sit amet est id dui aliquam laoreet. Maecenas at arcu et diam sollicitudin cursus. Morbi quis ante lectus. Etiam a lectus a nulla ullamcorper rutrum. Nam a congue purus, sit amet euismod odio. Morbi accumsan gravida lectus vitae accumsan. Donec sit amet enim imperdiet, rutrum justo sit amet, aliquet nibh. Duis vulputate ac nibh et sagittis.
+
 
 ### Tipos de dados
+Aliquam erat volutpat. Nunc eget enim vitae elit vestibulum ullamcorper. Nullam consequat erat vel lectus imperdiet bibendum. Pellentesque tempus euismod risus a scelerisque. Duis vel condimentum turpis, ac varius erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non venenatis diam, quis condimentum purus. Praesent commodo sollicitudin enim. Donec sollicitudin sodales auctor.
+
+
+#### int
+
+#### float
+
+#### str
+
+#### bool
 
 ### Variáveis e operadores
 
-… e assim por diante …
+### Listas, tuplas e dicionários
+
+### Estruturas de controle
+
+#### if
+
+#### else
+
+#### elif
+
+#### for
+
+#### while
+
+### Funções
+
+#### def
+
+#### parâmetros
+
+#### retorno
+
+### Importação de biblioteca
+
+### Boas práticas
 
 :::

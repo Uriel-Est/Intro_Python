@@ -1,15 +1,19 @@
-:root {
-  --header-height: 16.666vh;
-  --sidebar-width: 260px;
-  --sidebar-gap: 20px;
-  --right-gap: 20px;
+/* ==============================
+   1) RESET BÁSICO
+   ============================== */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-/* ===== HEADER ===== */
+/* ==============================
+   2) HEADER
+   ============================== */
 .site-header {
-  position: static;
-  height: var(--header-height);
-  background: #A3D5E0;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 80px;                      /* 1/5 da altura de 400px úteis, por ex */
+  background: #A3D5E0;               /* azul claro suave */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,44 +21,38 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
 }
-.site-header .header-container {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .site-header .logo {
   max-height: 60%;
   object-fit: contain;
 }
-.header-title {
-  font-family: Inter, sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
+.site-header h1 {
+  font-size: 1.6rem;
   color: #364234;
   margin: 0;
 }
 
-/* ===== SIDEBAR ===== */
-.site-sidebar {
-  position: sticky;
-  top: var(--header-height);
-  width: var(--sidebar-width);
-  background: rgba(248,249,250,0.95);
-  padding: 1rem;
-  height: calc(100vh - var(--header-height));
-  overflow-y: auto;
-  z-index: 900;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-radius: 0 8px 8px 0;
-  float: left;
+/* empurra o conteúdo pra baixo do header */
+body {
+  padding-top: 80px;
 }
-.sidebar-title {
-  font-family: Inter, sans-serif;
+
+/* ==============================
+   3) SIDEBAR (ÍNDICE MANUAL)
+   ============================== */
+.site-sidebar {
+  position: fixed;
+  top: 80px;                         /* logo abaixo do header */
+  left: 0;
+  width: 280px;                      /* largura do índice */
+  height: calc(100vh - 80px);
+  background: #F8F9FA;
+  padding: 1rem;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 900;
+}
+.site-sidebar .sidebar-title {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #364234;
@@ -72,21 +70,33 @@
   font-size: 0.9rem;
 }
 .site-sidebar a {
-  font-family: Inter, sans-serif;
   color: #284B63;
   text-decoration: none;
+  font-family: Inter, sans-serif;
 }
 .site-sidebar a:hover {
   text-decoration: underline;
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
+/* ==============================
+   4) CONTEÚDO PRINCIPAL
+   ============================== */
 .main-container {
-  margin-top: var(--header-height);
-  margin-left: calc(var(--sidebar-width) + var(--sidebar-gap));
-  margin-right: var(--right-gap);
-  padding: 1rem;
-  background: white;
-  min-width: 0;                /* evita quebra de layout */
-  overflow: visible;
+  margin-left: calc(280px + 20px);   /* sidebar + gap */
+  margin-right: 20px;                /* espaço negativo à direita */
+  padding: 1rem 0;
+  overflow: visible;                 /* scroll na página inteira */
+}
+
+/* afinamentos de tipografia */
+.main-container h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.main-container h3 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.main-container p {
+  line-height: 1.6;
 }

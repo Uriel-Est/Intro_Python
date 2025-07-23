@@ -4,7 +4,6 @@ project:
 format:
   html:
     theme: default
-    tufte: true
     css: styles.css
     include-before-body:
       - _header.html
