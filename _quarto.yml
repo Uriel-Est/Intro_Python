@@ -6,7 +6,9 @@ format:
     theme: default
     tufte: true
     css: styles.css
-    include-before-body: _header.html
+    include-before-body:
+      - _header.html
+      - _sidebar.html
 
 website:
   title: "Introdução aos Softwares Estatísticos"

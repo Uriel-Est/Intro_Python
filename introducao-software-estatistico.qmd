@@ -1,38 +1,37 @@
 ---
-title: "Introdução aos Softwares Estatísticos - Python"
+title: ""
 output-file: introducao-software-estatistico.html
-
-# Habilita o TOC nesta página:
-toc: true
-toc-depth: 3
-toc-location: left
-toc-floating: true
-toc-title: "Índice"
 ---
 
 ::: {.main-container}
 
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-# Git e GitHub
-## O que são
-## Para que servem
-## Comandos básicos
+Quarto enables you to weave together content and executable code into a finished document.  
+…
 
-# pip
-## O que é
-## Como instalar pacotes
-## Bibliotecas populares
+## Git e GitHub
 
-# Conceitos de Python
-## Tipos de dados
-## Variáveis e operadores
-## Listas, tuplas, dicionários
-## Estruturas de controle
-## Funções
-## Importação de bibliotecas
-## Boas práticas
+### O que são
+
+### Para que servem
+
+### Comandos básicos
+
+## pip
+
+### O que é
+
+### Como instalar pacotes
+
+### Bibliotecas populares
+
+## Conceitos de Python
+
+### Tipos de dados
+
+### Variáveis e operadores
+
+… e assim por diante …
 
 :::
-
