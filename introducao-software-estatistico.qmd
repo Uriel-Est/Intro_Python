@@ -1,12 +1,13 @@
 ---
-title: "Introdução aos Softwares Estátisticos - Python"
+title: "Introdução aos Softwares Estatísticos - Python"
 output-file: introducao-software-estatistico.html
-format: 
-    html:
-        tufte: true
-        include-before-body:
-            - _header.html
-            - _sidebar.html
+
+# Habilita o TOC nesta página:
+toc: true
+toc-depth: 3
+toc-location: left
+toc-floating: true
+toc-title: "Índice"
 ---
 
 ::: {.main-container}

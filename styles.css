@@ -36,22 +36,28 @@
   }
 }
 
-/* ===== Sidebar fixo ===== */
-.site-sidebar {
+/* ===== Quarto TOC Container ===== */
+.toc-container {
   position: fixed;
-  top: 60px;                /*  altura do header */
+  top: 60px;
   left: 0;
-  width: 200px;             /* ajuste se quiser mais largo ou estreito */
-  height: calc(100% - 60px);
+  width: 220px;
+  max-height: calc(100% - 60px);
   overflow-y: auto;
-  background: #f8f9fa;
   padding: 1rem;
+  background: #f8f9fa;
   border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   z-index: 999;
 }
 
-/* ===== Conteúdo deslocado ===== */
+.toc-title {
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+/* Dá espaço para o TOC ao redor do conteúdo */
 .main-container {
-  margin-left: 200px;       /* igual à largura da sidebar */
-  padding: 1rem;            /* espaço interno */
+  margin-left: 240px; /* width + gap */
+  padding: 1rem;
 }

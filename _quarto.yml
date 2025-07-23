@@ -1,19 +1,12 @@
 project:
   type: website
 
-format: 
-  html: 
+format:
+  html:
     theme: default
     tufte: true
     css: styles.css
-    include-before-body:
-      - _header.html
-      - _sidebar.html
-    
+    include-before-body: _header.html
 
-website: 
+website:
   title: "Introdução aos Softwares Estatísticos"
-  
-
-
-
