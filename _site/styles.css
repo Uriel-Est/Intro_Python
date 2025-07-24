@@ -1,102 +1,92 @@
-/* ==============================
-   1) RESET BÁSICO
-   ============================== */
+/* ========================================
+   RESET E VARIÁVEIS
+   ======================================== */
+*,
+*::before,
+*::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
+  font-family: Inter, sans-serif;
+  background: #fff; color: #333; line-height: 1.6;
+  overflow-x: hidden;
+}
+:root {
+  --navbar-height: 150px;
+  --sidebar-gap:   20px;
 }
 
-/* ==============================
-   2) HEADER
-   ============================== */
-.site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: 80px;                      /* 1/5 da altura de 400px úteis, por ex */
-  background: #A3D5E0;               /* azul claro suave */
+/* ========================================
+   1) NAVBAR COM BACKGROUND & LOGOS
+   ======================================== */
+.navbar { 
+  position: relative;
+  height: var(--navbar-height);
+  background: url('background.png') center/cover no-repeat !important;
+}
+.navbar-brand,
+.navbar-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 1000;
+  height: 100%;
 }
-.site-header .logo {
-  max-height: 60%;
-  object-fit: contain;
+/* Esconde o logo padrão do tema */
+.navbar-brand img { display: none !important; }
+
+/* Seu bloco de logos à esquerda */
+.navbar-logos {
+  display: flex; flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-right: 1rem;
 }
-.site-header h1 {
-  font-size: 1.6rem;
-  color: #364234;
-  margin: 0;
+.navbar-logos .logo-left-top,
+.navbar-logos .logo-left-bottom {
+  max-height: 60px; object-fit: contain;
 }
 
-/* empurra o conteúdo pra baixo do header */
-body {
-  padding-top: 80px;
-}
-
-/* ==============================
-   3) SIDEBAR (ÍNDICE MANUAL)
-   ============================== */
-.site-sidebar {
-  position: fixed;
-  top: 80px;                         /* logo abaixo do header */
-  left: 0;
-  width: 280px;                      /* largura do índice */
-  height: calc(100vh - 80px);
-  background: #F8F9FA;
-  padding: 1rem;
-  overflow-y: auto;
-  border-right: 1px solid #ddd;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  z-index: 900;
-}
-.site-sidebar .sidebar-title {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #364234;
-}
-.site-sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.site-sidebar li + li {
-  margin-top: 0.25rem;
-}
-.site-sidebar ul ul {
+/* Logo da UFPB à direita */
+.navbar-nav > li > img {
+  max-height: 100px; object-fit: contain;
   margin-left: 1rem;
-  font-size: 0.9rem;
-}
-.site-sidebar a {
-  color: #284B63;
-  text-decoration: none;
-  font-family: Inter, sans-serif;
-}
-.site-sidebar a:hover {
-  text-decoration: underline;
 }
 
-/* ==============================
-   4) CONTEÚDO PRINCIPAL
-   ============================== */
+/* Título central (Introdução aos Softwares Estatísticos) */
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 2rem;
+}
+.navbar-nav .nav-link {
+  color: #fff; font-size: 1.25rem; font-weight: 600;
+}
+
+/* Ícone de busca mantendo seu estilo */
+.navbar-nav .nav-icon {
+  margin-left: auto;
+  font-size: 1.5rem; color: #fff;
+}
+
+/* ========================================
+   2) SIDEBAR
+   ======================================== */
+.sidebar {
+  top: var(--navbar-height); /* logo abaixo da navbar */
+  margin-top: var(--sidebar-gap);
+}
+/* (você já deve ter o CSS do seu sidebar — mantenha-o igual) */
+
+/* ========================================
+   3) CONTEÚDO PRINCIPAL
+   ======================================== */
 .main-container {
-  margin-left: calc(280px + 20px);   /* sidebar + gap */
-  margin-right: 20px;                /* espaço negativo à direita */
-  padding: 1rem 0;
-  overflow: visible;                 /* scroll na página inteira */
+  margin-top: calc(var(--navbar-height) + var(--sidebar-gap));
+  /* … restante do seu CSS de conteúdo … */
 }
 
-/* afinamentos de tipografia */
-.main-container h2 {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-.main-container h3 {
-  font-size: 1.25rem;
-  margin-top: 1rem;
-}
-.main-container p {
-  line-height: 1.6;
+/* ========================================
+   4) RESPONSIVIDADE
+   ======================================== */
+@media (max-width: 1200px) {
+  .navbar { background-size: cover; }
+  .navbar-logos { display: none; }
 }

@@ -1,0 +1,17 @@
+// injeta o seu background.png no navbar
+.navbar {
+  background-image: url("background.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 150px !important;           // ajuste à altura do seu banner
+  margin-bottom: 0;
+}
+// remove a cor padrão
+.bg-primary, .navbar { background-color: transparent !important; }
+// centraliza verticalmente logo e links
+.navbar .navbar-brand,
+.navbar .navbar-nav { align-items: center; }
+.navbar .navbar-brand { padding: 0; margin-right: 2rem; }
+.navbar .navbar-nav .nav-link {
+  line-height: 150px;                  // deixa o link “Início” centralizado
+}

@@ -1,30 +1,62 @@
 [
   {
+    "objectID": "introducao-software-estatistico.html",
+    "href": "introducao-software-estatistico.html",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "",
+    "text": "Quarto te permite tomar suco de laranja e depois de maracujá…",
+    "crumbs": [
+      "Início",
+      "Quarto",
+      "Introdução aos Softwares Estatísticos"
+    ]
+  },
+  {
     "objectID": "introducao-software-estatistico.html#quarto",
     "href": "introducao-software-estatistico.html#quarto",
-    "title": "Introdução aos Softwares Estatísticos – Python",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto te permite tomar suco de laranja e depois de maracujá…"
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "",
+    "text": "Quarto te permite tomar suco de laranja e depois de maracujá…",
+    "crumbs": [
+      "Início",
+      "Quarto",
+      "Introdução aos Softwares Estatísticos"
+    ]
   },
   {
     "objectID": "introducao-software-estatistico.html#git-e-github",
     "href": "introducao-software-estatistico.html#git-e-github",
-    "title": "Introdução aos Softwares Estatísticos – Python",
+    "title": "Introdução aos Softwares Estatísticos",
     "section": "Git e GitHub",
-    "text": "Git e GitHub\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nO que são\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n\nPara que servem\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.\n\n\nComandos básicos\nThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+    "text": "Git e GitHub\nGit é um sistema de controle de versões que permite…\n\nO que são\nExplicação rápida…\n\n\nPara que servem\nMais detalhes…\n\n\nComandos básicos\n\ngit init\ngit add\ngit commit\ngit push\ngit pull\ngit clone",
+    "crumbs": [
+      "Início",
+      "Quarto",
+      "Introdução aos Softwares Estatísticos"
+    ]
   },
   {
     "objectID": "introducao-software-estatistico.html#pip",
     "href": "introducao-software-estatistico.html#pip",
-    "title": "Introdução aos Softwares Estatísticos – Python",
+    "title": "Introdução aos Softwares Estatísticos",
     "section": "pip",
-    "text": "pip\nFusce augue erat, molestie eu sem nec, suscipit fringilla libero. Donec a commodo nunc. Integer maximus tellus et dui laoreet, vel sollicitudin lorem ornare. Nam rhoncus lorem id nibh rutrum, sit amet mattis augue volutpat. Sed augue quam, lacinia et nisl et, gravida lobortis dui. Vivamus quis nisi vel nibh porta ornare vel a arcu. Ut aliquet sit amet metus id pharetra. Nam eget velit ac velit blandit accumsan.\n\nO que é\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue augue nunc, ac auctor tortor maximus a. Nulla sodales sodales turpis in condimentum. Duis quis velit pharetra, varius mauris vel, accumsan lorem. Integer aliquet nibh a justo consequat, in commodo magna vestibulum. Nullam imperdiet sapien a suscipit aliquam. Morbi quis tellus vitae nibh tempus rutrum. Proin a nisl aliquam, aliquet enim nec, molestie erat. Nunc condimentum id sem vel laoreet. Maecenas diam libero, euismod tempus congue a, elementum ut mi. Curabitur dapibus libero eget ipsum consectetur tempus. Nulla consectetur consequat velit.\n\n\nComo instalar pacotes\nDonec quis dui felis. Pellentesque lacinia nibh eu tristique consequat. Sed dictum volutpat massa, elementum eleifend nisi rutrum vitae. Donec at facilisis ligula. Ut vehicula, massa ultrices iaculis ullamcorper, purus magna sodales neque, et elementum felis orci at nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla porttitor ipsum ut lorem consequat egestas. Morbi eu condimentum tellus, eu elementum nulla. Pellentesque malesuada ut quam in dignissim.\n\n\nBibliotecas populares\nDonec nisi orci, rutrum et vulputate et, fermentum sed nisi. Nullam sit amet velit lacus. Quisque rhoncus laoreet nibh, eget commodo urna tristique ut. Praesent eget finibus dolor, at luctus nibh. Suspendisse eu magna lacus. Cras facilisis nisi ut tortor consectetur, sit amet placerat orci auctor. Suspendisse cursus augue mi, at suscipit lorem suscipit eu."
+    "text": "pip\n\nO que é\n…\n\n\nComo instalar pacotes\n…\n\n\nBibliotecas populares\n\npandas\n\nnumpy\n\nmatplotlib\n\nrequests",
+    "crumbs": [
+      "Início",
+      "Quarto",
+      "Introdução aos Softwares Estatísticos"
+    ]
   },
   {
     "objectID": "introducao-software-estatistico.html#conceitos-de-python",
     "href": "introducao-software-estatistico.html#conceitos-de-python",
-    "title": "Introdução aos Softwares Estatísticos – Python",
+    "title": "Introdução aos Softwares Estatísticos",
     "section": "Conceitos de Python",
-    "text": "Conceitos de Python\nNam facilisis feugiat arcu ut ultricies. Aliquam justo justo, pharetra sed facilisis et, viverra sed massa. Pellentesque congue tortor a blandit viverra. Donec aliquet libero sed est porta tempor. Aliquam sit amet est id dui aliquam laoreet. Maecenas at arcu et diam sollicitudin cursus. Morbi quis ante lectus. Etiam a lectus a nulla ullamcorper rutrum. Nam a congue purus, sit amet euismod odio. Morbi accumsan gravida lectus vitae accumsan. Donec sit amet enim imperdiet, rutrum justo sit amet, aliquet nibh. Duis vulputate ac nibh et sagittis.\n\nTipos de dados\nAliquam erat volutpat. Nunc eget enim vitae elit vestibulum ullamcorper. Nullam consequat erat vel lectus imperdiet bibendum. Pellentesque tempus euismod risus a scelerisque. Duis vel condimentum turpis, ac varius erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non venenatis diam, quis condimentum purus. Praesent commodo sollicitudin enim. Donec sollicitudin sodales auctor.\n\nint\n\n\nfloat\n\n\nstr\n\n\nbool\n\n\n\nVariáveis e operadores\n\n\nListas, tuplas e dicionários\n\n\nEstruturas de controle\n\nif\n\n\nelse\n\n\nelif\n\n\nfor\n\n\nwhile\n\n\n\nFunções\n\ndef\n\n\nparâmetros\n\n\nretorno\n\n\n\nImportação de biblioteca\n\n\nBoas práticas"
+    "text": "Conceitos de Python\n\nTipos de dados\n\nint\n\nfloat\n\nstr\n\nbool\n\n\n\nVariáveis e operadores\n…\n\n\nListas, tuplas e dicionários\n…\n\n\nEstruturas de controle\n\nif / else / elif\n\nfor\n\nwhile\n\n\n\nFunções\n\ndef\n\n\nParâmetros\n…\n\n\nRetorno\n…\n\n\n\nImportação de biblioteca\n…\n\n\nBoas práticas\n\nComentários\n\nNomes descritivos\n\nIndentação consistente",
+    "crumbs": [
+      "Início",
+      "Quarto",
+      "Introdução aos Softwares Estatísticos"
+    ]
   }
 ]
