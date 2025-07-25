@@ -1,92 +1,256 @@
 /* ========================================
-   RESET E VARIÁVEIS
+   VARIÁVEIS CSS
    ======================================== */
-*,
-*::before,
-*::after {
-  margin: 0; padding: 0; box-sizing: border-box;
-}
-html, body {
-  margin: 0; padding: 0;
-  font-family: Inter, sans-serif;
-  background: #fff; color: #333; line-height: 1.6;
-  overflow-x: hidden;
-}
 :root {
   --navbar-height: 150px;
-  --sidebar-gap:   20px;
+  --sidebar-width: 280px;
+  --sidebar-margin-left: 20px;
+  --content-margin-left: 310px;
+  --content-margin-right: 20px;
 }
 
 /* ========================================
-   1) NAVBAR COM BACKGROUND & LOGOS
+   HEADER/NAVBAR CUSTOMIZADO
    ======================================== */
-.navbar { 
-  position: relative;
-  height: var(--navbar-height);
+.navbar,
+.navbar-expand-lg {
+  height: var(--navbar-height) !important;
+  min-height: var(--navbar-height) !important;
   background: url('background.png') center/cover no-repeat !important;
-}
-.navbar-brand,
-.navbar-nav {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-/* Esconde o logo padrão do tema */
-.navbar-brand img { display: none !important; }
-
-/* Seu bloco de logos à esquerda */
-.navbar-logos {
-  display: flex; flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin-right: 1rem;
-}
-.navbar-logos .logo-left-top,
-.navbar-logos .logo-left-bottom {
-  max-height: 60px; object-fit: contain;
+  position: relative !important;
 }
 
-/* Logo da UFPB à direita */
-.navbar-nav > li > img {
-  max-height: 100px; object-fit: contain;
-  margin-left: 1rem;
+/* Adicionar logos via CSS pseudo-elementos */
+.navbar::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  height: 130px;
+  background: url('LOGO-PNG³.png') top center/auto 75px no-repeat,
+              url('logo-dept.png') bottom center/auto 70px no-repeat;
+  z-index: 10;
 }
 
-/* Título central (Introdução aos Softwares Estatísticos) */
-.navbar-nav .nav-item + .nav-item {
-  margin-left: 2rem;
-}
-.navbar-nav .nav-link {
-  color: #fff; font-size: 1.25rem; font-weight: 600;
+.navbar::after {
+  content: '';
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 120px;
+  background: url('logo-uf.png') center/auto 120px no-repeat;
+  z-index: 10;
 }
 
-/* Ícone de busca mantendo seu estilo */
-.navbar-nav .nav-icon {
-  margin-left: auto;
-  font-size: 1.5rem; color: #fff;
+/* Centralizar título */
+.navbar-title {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+  z-index: 15 !important;
 }
 
 /* ========================================
-   2) SIDEBAR
+   SIDEBAR FLUTUANTE
    ======================================== */
-.sidebar {
-  top: var(--navbar-height); /* logo abaixo da navbar */
-  margin-top: var(--sidebar-gap);
+.sidebar,
+.sidebar-navigation,
+#quarto-sidebar {
+  position: fixed !important;
+  top: calc(var(--navbar-height) + 20px) !important;
+  left: var(--sidebar-margin-left) !important;
+  width: var(--sidebar-width) !important;
+  height: calc(100vh - var(--navbar-height) - 40px) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 20px !important;
+  overflow-y: auto !important;
+  z-index: 1000 !important;
+  margin: 0 !important;
 }
-/* (você já deve ter o CSS do seu sidebar — mantenha-o igual) */
+
+/* Estilo dos links do sidebar */
+.sidebar a,
+.sidebar-navigation a {
+  display: block !important;
+  padding: 8px 12px !important;
+  color: #34495e !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  font-size: 0.9rem !important;
+}
+
+.sidebar a:hover,
+.sidebar-navigation a:hover {
+  background: rgba(52, 152, 219, 0.1) !important;
+  color: #2980b9 !important;
+  transform: translateX(4px) !important;
+}
 
 /* ========================================
-   3) CONTEÚDO PRINCIPAL
+   CONTEÚDO PRINCIPAL
    ======================================== */
-.main-container {
-  margin-top: calc(var(--navbar-height) + var(--sidebar-gap));
-  /* … restante do seu CSS de conteúdo … */
+
+/* Reset apenas para elementos do conteúdo principal, não do sidebar */
+#quarto-content,
+#quarto-content .quarto-container,
+#quarto-content main,
+#quarto-content .page-columns,
+#quarto-content .column-page,
+#quarto-content .column-body,
+#quarto-content article,
+#quarto-content .page-layout-article,
+#quarto-content .page-rows-contents,
+#quarto-content .container-fluid {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Aplicar margens apenas ao container principal */
+#quarto-content {
+  margin-left: var(--content-margin-left) !important;
+  margin-right: var(--content-margin-right) !important;
+  margin-top: calc(var(--navbar-height) + 10px) !important;
+  padding: 20px !important;
+  width: calc(100vw - var(--content-margin-left) - var(--content-margin-right)) !important;
+  max-width: calc(100vw - var(--content-margin-left) - var(--content-margin-right)) !important;
+}
+
+/* Garantir que o conteúdo interno use toda a largura */
+#quarto-content > * {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Forçar containers específicos do Quarto */
+body.nav-sidebar.floating #quarto-content {
+  margin-left: var(--content-margin-left) !important;
+  margin-right: var(--content-margin-right) !important;
+  margin-top: calc(var(--navbar-height) + 10px) !important;
+  width: calc(100vw - var(--content-margin-left) - var(--content-margin-right)) !important;
+  max-width: calc(100vw - var(--content-margin-left) - var(--content-margin-right)) !important;
+}
+
+/* Ajustar breadcrumbs e navegação secundária */
+.quarto-secondary-nav {
+  margin-left: var(--content-margin-left) !important;
+  margin-right: var(--content-margin-right) !important;
+  width: calc(100vw - var(--content-margin-left) - var(--content-margin-right)) !important;
 }
 
 /* ========================================
-   4) RESPONSIVIDADE
+   RESPONSIVIDADE
    ======================================== */
 @media (max-width: 1200px) {
-  .navbar { background-size: cover; }
-  .navbar-logos { display: none; }
+  :root {
+    --sidebar-width: 250px;
+    --content-margin-left: 280px;
+    --content-margin-right: 20px;
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .navbar::before {
+    width: 270px;
+    background: url('LOGO-PNG³.png') top center/auto 65px no-repeat,
+                url('logo-dept.png') bottom center/auto 60px no-repeat;
+  }
+  
+  .navbar::after {
+    width: 130px;
+    background: url('logo-uf.png') center/auto 100px no-repeat;
+  }
 }
+
+@media (max-width: 992px) {
+  :root {
+    --sidebar-width: 220px;
+    --content-margin-left: 250px;
+    --content-margin-right: 15px;
+  }
+  
+  .navbar-title {
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar::before {
+    width: 220px;
+    background: url('LOGO-PNG³.png') top center/auto 55px no-repeat,
+                url('logo-dept.png') bottom center/auto 50px no-repeat;
+  }
+  
+  .navbar::after {
+    width: 110px;
+    background: url('logo-uf.png') center/auto 80px no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 200px;
+    --sidebar-margin-left: 10px;
+    --content-margin-left: 220px;
+    --content-margin-right: 10px;
+  }
+  
+  .navbar-title {
+    font-size: 1.1rem !important;
+  }
+  
+  .navbar::before {
+    width: 170px;
+    background: url('LOGO-PNG³.png') top center/auto 45px no-repeat,
+                url('logo-dept.png') bottom center/auto 40px no-repeat;
+  }
+  
+  .navbar::after {
+    width: 90px;
+    background: url('logo-uf.png') center/auto 60px no-repeat;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none !important;
+  }
+  
+  :root {
+    --content-margin-left: 15px;
+    --content-margin-right: 15px;
+  }
+  
+  .navbar-title {
+    font-size: 1rem !important;
+  }
+  
+  .navbar::before {
+    width: 140px;
+    background: url('LOGO-PNG³.png') top center/auto 35px no-repeat,
+                url('logo-dept.png') bottom center/auto 30px no-repeat;
+  }
+  
+  .navbar::after {
+    width: 70px;
+    background: url('logo-uf.png') center/auto 45px no-repeat;
+  }
+}
+

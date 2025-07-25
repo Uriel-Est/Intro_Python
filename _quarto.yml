@@ -4,41 +4,18 @@ project:
 format:
   html:
     theme: default
-    css: styles.css   # seu CSS customizado
+    css: styles.css
 
 website:
   title: "Introdução aos Softwares Estatísticos"
-
-  # ============================
-  # 1) BARRA DE NAVEGAÇÃO (HEADER)
-  # ============================
   navbar:
-    # Injetamos o “brand” com HTML puro
-    brand: |
-      <div class="custom-header">
-        <div class="logos-left">
-          <img src="LOGO-PNG³.png"       alt="Leap logo"            class="logo-left-top">
-          <img src="logo-dept.png"       alt="Depto. Estatística"   class="logo-left-bottom">
-        </div>
-        <div class="header-title">Introdução aos Softwares Estatísticos</div>
-        <div class="logo-right">
-          <img src="logo-uf.png"         alt="UF logo"               class="logo-uf">
-        </div>
-      </div>
-
-    # Se quiser um link “Início” à esquerda, mantenha assim:
-    left:
-      - text: "Início"
-        href: introducao-software-estatistico.qmd
-
-  # ============================
-  # 2) SIDEBAR (ÍNDICE DO SITE)
-  # ============================
+    background: primary
+    title: "Introdução aos Softwares Estatísticos"
   sidebar:
     - id: introducao-software-estatistico
       title: "Índice"
-      style: docked         # fica fixo à esquerda
-      background: light     # fundo claro
+      style: floating
+      background: light
       contents:
         - section: "Quarto"
           contents:

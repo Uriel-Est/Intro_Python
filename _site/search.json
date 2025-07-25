@@ -4,9 +4,8 @@
     "href": "introducao-software-estatistico.html",
     "title": "Introdução aos Softwares Estatísticos",
     "section": "",
-    "text": "Quarto te permite tomar suco de laranja e depois de maracujá…",
+    "text": "Testando borda rosa",
     "crumbs": [
-      "Início",
       "Quarto",
       "Introdução aos Softwares Estatísticos"
     ]
@@ -15,10 +14,9 @@
     "objectID": "introducao-software-estatistico.html#quarto",
     "href": "introducao-software-estatistico.html#quarto",
     "title": "Introdução aos Softwares Estatísticos",
-    "section": "",
-    "text": "Quarto te permite tomar suco de laranja e depois de maracujá…",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto te permite tomar suco de laranja e depois de maracujá…",
     "crumbs": [
-      "Início",
       "Quarto",
       "Introdução aos Softwares Estatísticos"
     ]
@@ -30,7 +28,6 @@
     "section": "Git e GitHub",
     "text": "Git e GitHub\nGit é um sistema de controle de versões que permite…\n\nO que são\nExplicação rápida…\n\n\nPara que servem\nMais detalhes…\n\n\nComandos básicos\n\ngit init\ngit add\ngit commit\ngit push\ngit pull\ngit clone",
     "crumbs": [
-      "Início",
       "Quarto",
       "Introdução aos Softwares Estatísticos"
     ]
@@ -42,7 +39,6 @@
     "section": "pip",
     "text": "pip\n\nO que é\n…\n\n\nComo instalar pacotes\n…\n\n\nBibliotecas populares\n\npandas\n\nnumpy\n\nmatplotlib\n\nrequests",
     "crumbs": [
-      "Início",
       "Quarto",
       "Introdução aos Softwares Estatísticos"
     ]
@@ -54,7 +50,6 @@
     "section": "Conceitos de Python",
     "text": "Conceitos de Python\n\nTipos de dados\n\nint\n\nfloat\n\nstr\n\nbool\n\n\n\nVariáveis e operadores\n…\n\n\nListas, tuplas e dicionários\n…\n\n\nEstruturas de controle\n\nif / else / elif\n\nfor\n\nwhile\n\n\n\nFunções\n\ndef\n\n\nParâmetros\n…\n\n\nRetorno\n…\n\n\n\nImportação de biblioteca\n…\n\n\nBoas práticas\n\nComentários\n\nNomes descritivos\n\nIndentação consistente",
     "crumbs": [
-      "Início",
       "Quarto",
       "Introdução aos Softwares Estatísticos"
     ]

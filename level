@@ -1,0 +1,6 @@
+(ERROR) YAMLException: duplicated mapping key (C:\Users\uriel\Documents\UFPB Estatística\Introdução aos Softwares Estátisticos - Python\_quarto.yml, 23:5)
+22:     # Se quiser um link “Início” à esquerda, mantenha assim:
+23:     left:
+       ~~
+24:       - text: "Início"
+

@@ -6,6 +6,14 @@ format:
     css: styles.css      # só se você ainda quiser customizar cores/tipografia
 ---
 
+::: {.sidebar style="border: 3px solid hotpink;"}
+**Testando borda rosa**
+:::
+
+::: {.quarto-sidebar}
+**Teste detectando classe**
+:::
+
 ## Quarto {#quarto}
 
 Quarto te permite tomar suco de laranja e depois de maracujá...
