@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "",
+    "text": "Objetivo. Apresentar, de forma prática, os fundamentos de Quarto, Git/GitHub, pip e conceitos básicos de Python para que você consiga preparar, versionar e publicar materiais de aula e relatórios reproduzíveis."
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "1 Quarto",
+    "text": "1 Quarto\nQuarto é um sistema de publicação científica que permite produzir páginas web, relatórios e slides a partir de arquivos Markdown (com blocos de código opcionais).\n\nArquivos .qmd misturam texto, figuras e código (R, Python, etc.).\nVocê pode publicar como site ou como documento único em HTML/PDF.\nRenderização local: quarto preview (hot-reload) e quarto render (build final).\n\n\n1.1 Estrutura mínima de um .qmd\n---\ntitle: \"Meu documento\"\nformat:\n  html:\n    toc: true\n---\n\n# Seção\nTexto **Markdown** normal.\n\n::: {#e7e5de48 .cell execution_count=1}\n``` {.python .cell-code}\nprint(\"Olá, Quarto!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nOlá, Quarto!\n```\n:::\n:::\n\n\n\n1.2 Organização recomendada\n\nTítulos hierárquicos (#, ##, ###) com IDs estáveis usando {#meu-id}.\nTabela de conteúdo (toc: true) para navegação lateral.\nUse callouts para dicas, avisos e observações."
+  },
+  {
+    "objectID": "index.html#git-e-github",
+    "href": "index.html#git-e-github",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "2 Git e GitHub",
+    "text": "2 Git e GitHub\nGit é um sistema de controle de versões que permite rastrear mudanças e colaborar. O GitHub é um serviço que hospeda seus repositórios online.\n\n2.1 O que são\n\nGit: ferramenta local de versionamento.\nGitHub: plataforma remota para backup, colaboração e publicação (inclui GitHub Pages).\n\n\n\n2.2 Para que servem\n\nHistórico e rollback de alterações.\nTrabalho em equipe via branch/pull request.\nPublicação de sites (ex.: páginas Quarto em docs/).\n\n\n\n2.3 Comandos básicos\ngit init                  # inicia repositório\ngit add .                 # adiciona mudanças\ngit commit -m \"primeiro commit\"\ngit remote add origin https://github.com/usuario/repositorio.git\ngit push -u origin main   # envia branch principal\ngit pull                  # puxa mudanças\ngit clone &lt;url&gt;           # clona repositório existente\n\n\n\n\n\n\nDica\n\n\n\nFluxo enxuto: edite → git add -A → git commit -m \"msg\" → git push."
+  },
+  {
+    "objectID": "index.html#pip",
+    "href": "index.html#pip",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "3 pip",
+    "text": "3 pip\n\n3.1 O que é\npip é o gerenciador de pacotes do Python.\n\n\n3.2 Como instalar pacotes\n# Instalar\npip install pandas numpy matplotlib requests\n\n# Atualizar pacote\npip install --upgrade pandas\n\n# Congelar dependências\npip freeze &gt; requirements.txt\n\n# Instalar a partir do requirements\npip install -r requirements.txt\n\n\n3.3 Bibliotecas populares\n\npandas — dados tabulares\nnumpy — vetores, matrizes e numérico\nmatplotlib — gráficos\nrequests — HTTP simples"
+  },
+  {
+    "objectID": "index.html#conceitos-de-python",
+    "href": "index.html#conceitos-de-python",
+    "title": "Introdução aos Softwares Estatísticos",
+    "section": "4 Conceitos de Python",
+    "text": "4 Conceitos de Python\n\n4.1 Tipos de dados\n\nint, float, str, bool\n\nx, y = 3, 2.5\ns, b = \"texto\", True\ntype(x), type(y), type(s), type(b)\n\n\n4.2 Variáveis e operadores\na = 10\nb = 3\nquociente = a // b   # divisão inteira\nresto = a % b        # módulo\npotencia = a ** b\nquociente, resto, potencia\n\n\n4.3 Listas, tuplas e dicionários\nlista = [1, 2, 3]\ntupla = (1, 2, 3)\ndicio = {\"nome\": \"Ana\", \"idade\": 22}\n\nlista.append(4)\ndicio[\"curso\"] = \"Estatística\"\nlista, tupla, dicio\n\n\n4.4 Estruturas de controle\n# if / elif / else\nnota = 8.3\nif nota &gt;= 7:\n    status = \"aprovado\"\nelif nota &gt;= 5:\n    status = \"recuperação\"\nelse:\n    status = \"reprovado\"\n\n# for\nquadrados = [i*i for i in range(5)]\n\n# while\ni, soma = 0, 0\nwhile i &lt; 5:\n    soma += i\n    i += 1\n\nstatus, quadrados, soma\n\n\n4.5 Funções\n\n4.5.1 def e parâmetros\ndef soma(a, b=0):\n    '''Soma dois números.'''\n    return a + b\n\nsoma(2), soma(2, 5)\n\n\n4.5.2 Retorno\ndef estat(x):\n    return min(x), sum(x)/len(x), max(x)\n\nestat([3, 5, 4, 10, 2])\n\n\n\n4.6 Importação de biblioteca\nimport math as m\nfrom statistics import mean\n\nraiz2 = m.sqrt(2)\nmedia = mean([1, 4, 7])\nraiz2, media\n\n\n4.7 Boas práticas\n\nComentários curtos e úteis.\nNomes descritivos (snake_case).\nIndentação consistente (4 espaços).\nFixe dependências em requirements.txt.\nUse notebooks e .qmd reproduzíveis."
+  }
+]

@@ -1,0 +1,204 @@
+---
+title: "Introdução aos Softwares Estatísticos"
+page-layout: article
+toc: true
+toc-title: "Nesta página"
+toc-location: right     # movemos para a direita
+number-sections: true
+anchor-sections: true
+sidebar: false          # desativa a sidebar do projeto nesta página
+lang: pt-BR
+execute:
+  echo: true
+  warning: false
+  freeze: auto
+format:
+  html:
+    theme: default
+    css: styles.css
+    code-link: true
+    link-external-newwindow: true
+---
+
+> **Objetivo.** Apresentar, de forma prática, os fundamentos de *Quarto*, *Git/GitHub*, *pip* e conceitos básicos de **Python** para que você consiga preparar, versionar e publicar materiais de aula e relatórios reproduzíveis.
+
+::: {.callout-note}
+**Dica rápida:** use `quarto preview` para ver a página atualizando a cada gravação e `quarto render` para produzir a versão final.
+:::
+
+## Quarto {#quarto}
+
+Quarto é um sistema de publicação científica que permite produzir páginas web, relatórios e slides a partir de arquivos *Markdown* (com blocos de código opcionais).
+
+- Arquivos `.qmd` misturam texto, figuras e código (R, Python, etc.).
+- Você pode publicar como **site** ou como **documento único** em HTML/PDF.
+- Renderização local: `quarto preview` (hot-reload) e `quarto render` (build final).
+
+### Estrutura mínima de um `.qmd` {#estrutura-minima}
+
+````markdown
+---
+title: "Meu documento"
+format:
+  html:
+    toc: true
+---
+
+# Seção
+Texto **Markdown** normal.
+
+```{python}
+print("Olá, Quarto!")
+```
+````
+
+### Organização recomendada {#organizacao}
+- Títulos hierárquicos (`#`, `##`, `###`) com *IDs* estáveis usando `{#meu-id}`.
+- Tabela de conteúdo (`toc: true`) para navegação lateral.
+- Use *callouts* para dicas, avisos e observações.
+
+## Git e GitHub {#git-e-github}
+
+Git é um sistema de controle de versões que permite rastrear mudanças e colaborar. O GitHub é um serviço que hospeda seus repositórios online.
+
+### O que são {#o-que-sao}
+- **Git:** ferramenta local de versionamento.
+- **GitHub:** plataforma remota para backup, colaboração e publicação (inclui *GitHub Pages*).
+
+### Para que servem {#para-que-servem}
+- Histórico e *rollback* de alterações.
+- Trabalho em equipe via *branch*/*pull request*.
+- Publicação de sites (ex.: páginas Quarto em `docs/`).
+
+### Comandos básicos {#comandos-basicos}
+
+```bash
+git init                  # inicia repositório
+git add .                 # adiciona mudanças
+git commit -m "primeiro commit"
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main   # envia branch principal
+git pull                  # puxa mudanças
+git clone <url>           # clona repositório existente
+```
+
+::: {.callout-tip}
+**Fluxo enxuto:** edite → `git add -A` → `git commit -m "msg"` → `git push`.
+:::
+
+## pip {#pip}
+
+### O que é {#o-que-e}
+`pip` é o gerenciador de pacotes do Python.
+
+### Como instalar pacotes {#como-instalar-pacotes}
+```bash
+# Instalar
+pip install pandas numpy matplotlib requests
+
+# Atualizar pacote
+pip install --upgrade pandas
+
+# Congelar dependências
+pip freeze > requirements.txt
+
+# Instalar a partir do requirements
+pip install -r requirements.txt
+```
+
+### Bibliotecas populares {#bibliotecas-populares}
+- `pandas` — dados tabulares
+- `numpy` — vetores, matrizes e numérico
+- `matplotlib` — gráficos
+- `requests` — HTTP simples
+
+## Conceitos de Python {#conceitos-de-python}
+
+### Tipos de dados {#tipos-de-dados}
+- `int`, `float`, `str`, `bool`
+
+```python
+x, y = 3, 2.5
+s, b = "texto", True
+type(x), type(y), type(s), type(b)
+```
+
+### Variáveis e operadores {#variaveis-e-operadores}
+```python
+a = 10
+b = 3
+quociente = a // b   # divisão inteira
+resto = a % b        # módulo
+potencia = a ** b
+quociente, resto, potencia
+```
+
+### Listas, tuplas e dicionários {#listas-tuplas-e-dicionarios}
+```python
+lista = [1, 2, 3]
+tupla = (1, 2, 3)
+dicio = {"nome": "Ana", "idade": 22}
+
+lista.append(4)
+dicio["curso"] = "Estatística"
+lista, tupla, dicio
+```
+
+### Estruturas de controle {#estruturas-de-controle}
+```python
+# if / elif / else
+nota = 8.3
+if nota >= 7:
+    status = "aprovado"
+elif nota >= 5:
+    status = "recuperação"
+else:
+    status = "reprovado"
+
+# for
+quadrados = [i*i for i in range(5)]
+
+# while
+i, soma = 0, 0
+while i < 5:
+    soma += i
+    i += 1
+
+status, quadrados, soma
+```
+
+### Funções {#funcoes}
+
+#### `def` e parâmetros {#def}
+```python
+def soma(a, b=0):
+    '''Soma dois números.'''
+    return a + b
+
+soma(2), soma(2, 5)
+```
+
+#### Retorno {#retorno}
+```python
+def estat(x):
+    return min(x), sum(x)/len(x), max(x)
+
+estat([3, 5, 4, 10, 2])
+```
+
+### Importação de biblioteca {#importacao-de-biblioteca}
+```python
+import math as m
+from statistics import mean
+
+raiz2 = m.sqrt(2)
+media = mean([1, 4, 7])
+raiz2, media
+```
+
+### Boas práticas {#boas-praticas}
+- Comentários curtos e úteis.
+- Nomes descritivos (`snake_case`).
+- Indentação consistente (4 espaços).
+- Fixe dependências em `requirements.txt`.
+- Use *notebooks* e `.qmd` reproduzíveis.

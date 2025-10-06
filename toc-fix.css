@@ -1,0 +1,32 @@
+
+/* === Fix: TOC (margin sidebar) showing as a full-page white box === */
+/* Your styles.css applies strong rules to `.sidebar` (fixed, large, white card).
+   Quarto's margin TOC also has the class `.sidebar`, so it gets those rules.
+   We undo them just for the margin TOC. */
+
+#quarto-margin-sidebar.sidebar,
+#quarto-margin-sidebar {
+  position: sticky !important;   /* default: sticky margin box */
+  top: 6rem !important;          /* leave room for navbar */
+  width: auto !important;
+  max-width: 22rem !important;
+  height: auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Make the TOC itself compact and transparent */
+#quarto-margin-sidebar #TOC,
+#quarto-margin-sidebar nav[role="doc-toc"] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* On small screens, hide the margin toc (optional) */
+@media (max-width: 991.98px) {
+  #quarto-margin-sidebar { display: none !important; }
+}

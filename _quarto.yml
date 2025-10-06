@@ -1,54 +1,25 @@
 project:
   type: website
+  output-dir: docs
+  render:
+    - index.qmd   # só a homepage por enquanto
+
+website:
+  title: "Introdução aos Softwares Estatísticos"   # <<< string, não boolean
+  navbar:
+    title: false            # esconde o texto do título na barra (fica só teu header estilizado)
+    collapse-below: lg
+    left:
+      - text: "Início"
+        href: index.qmd
+  # (sem bloco 'sidebar' -> nenhuma sidebar de projeto)
 
 format:
   html:
     theme: default
-    css: styles.css
-
-website:
-  title: "Introdução aos Softwares Estatísticos"
-  navbar:
-    background: primary
-    title: "Introdução aos Softwares Estatísticos"
-  sidebar:
-    - id: introducao-software-estatistico
-      title: "Índice"
-      style: floating
-      background: light
-      contents:
-        - section: "Quarto"
-          contents:
-            - introducao-software-estatistico.qmd
-        - section: "Git e GitHub"
-          contents:
-            - text: "O que são"
-              href: introducao-software-estatistico.qmd#o-que-sao
-            - text: "Para que servem"
-              href: introducao-software-estatistico.qmd#para-que-servem
-            - text: "Comandos básicos"
-              href: introducao-software-estatistico.qmd#comandos-basicos
-        - section: "pip"
-          contents:
-            - text: "O que é"
-              href: introducao-software-estatistico.qmd#o-que-e
-            - text: "Como instalar pacotes"
-              href: introducao-software-estatistico.qmd#como-instalar-pacotes
-            - text: "Bibliotecas populares"
-              href: introducao-software-estatistico.qmd#bibliotecas-populares
-        - section: "Conceitos de Python"
-          contents:
-            - text: "Tipos de dados"
-              href: introducao-software-estatistico.qmd#tipos-de-dados
-            - text: "Variáveis e operadores"
-              href: introducao-software-estatistico.qmd#variaveis-e-operadores
-            - text: "Listas, tuplas e dicionários"
-              href: introducao-software-estatistico.qmd#listas-tuplas-e-dicionarios
-            - text: "Estruturas de controle"
-              href: introducao-software-estatistico.qmd#estruturas-de-controle
-            - text: "Funções"
-              href: introducao-software-estatistico.qmd#funcoes
-            - text: "Importação de biblioteca"
-              href: introducao-software-estatistico.qmd#importacao-de-biblioteca
-            - text: "Boas práticas"
-              href: introducao-software-estatistico.qmd#boas-praticas
+    css: [styles.css, toc-fix.css]  # seu CSS + o fix do TOC
+    toc: true
+    toc-title: "Nesta página"
+    anchor-sections: true
+    link-external-newwindow: true
+lang: pt-BR
