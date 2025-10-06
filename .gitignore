@@ -1,3 +1,47 @@
+# ===============================
+# Quarto / Website
+# ===============================
 /.quarto/
+/.quarto/*
+/_site/
 
-FibonacciDev/git_repo/
+# GitHub Pages vai servir a partir de docs/ — mantenha essa pasta versionada
+!docs/
+
+# Artefatos HTML soltos na raiz (o site final fica em docs/)
+# Comente esta linha se quiser versionar algum .html na raiz
+/*.html
+
+# Busca gerada na raiz (o projeto usa docs/)
+/search.json
+
+# ===============================
+# Jupyter / Notebooks
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# ===============================
+# SO / temporários
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+
+# ===============================
+# Pastas locais que não precisam ir para o repo
+# ===============================
+/FibonacciDev/git_repo/
+/Prova 3/
